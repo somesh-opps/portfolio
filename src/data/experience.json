@@ -1,0 +1,31 @@
+[
+  {
+    "name": "Innovation Battle",
+    "type": "Project Compettition",
+    "certificate": false,
+    "certificateUrl": null,
+    "description": "A collaborative project competition where teams developed innovative solutions to real-world problems."
+  },
+  {
+    "name": "Hack Snippet 3.0",
+    "type": "Hackathon",
+    "certificate": true,
+    "certificateUrl": "/portfolio/assets/certificates/Hack Snippet 3.0.png",
+    "description": "An intense 24-hour hackathon focused on building AI and ML prototypes."
+  },
+  {
+    "name": "Script Grid & Script Grid 2.0",
+    "type": "Coding Competition",
+    "certificate": true,
+    "certificateUrl": "/portfolio/assets/certificates/script grid.jpg",
+    "certificateUrl2": "/portfolio/assets/certificates/script grid 2.0.png",
+    "description": "Competitive coding events that challenged algorithmic and problem-solving skills."
+  },
+  {
+    "name": "Ucode 10.0",
+    "type": "Hackathon",
+    "certificate": true,
+    "certificateUrl": "/portfolio/assets/certificates/ucode 10.0.jpg",
+    "description": "A student-led hackathon emphasizing collaboration and rapid prototyping."
+  }
+]

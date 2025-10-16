@@ -1,0 +1,57 @@
+[
+  {
+    "title": "Developing Soft Skills and Personality",
+    "description": "This is a NPTEL course by Prof. T. Ravichandran, IIT Kanpur.",
+    "certificate": true,
+    "certificateUrl": "/portfolio/assets/certificates/Developing Soft Skills and Personality.jpg"
+  },
+  {
+    "title": "Google AI Essentials",
+    "description": "This is a Coursera course by Google.",
+    "certificate": true,
+    "certificateUrl": "/portfolio/assets/certificates/Google AI Essentials.jpg"
+  },
+  {
+    "title": "Python Crash Course",
+    "description": "This is a Coursera course by Google.",
+    "certificate": true,
+    "certificateUrl": "/portfolio/assets/certificates/Python Crash Course.jpg"
+  },
+  {
+    "title": "C and C++",
+    "description": "Prof. Kannan Moudgalya, IIT Bombay, NPTEL",
+    "certificate": false,
+    "certificateUrl": null
+  },
+  {
+    "title": "Arduino",
+    "description": "Prof. Kannan Moudgalya, IIT Bombay, NPTEL",
+    "certificate": false,
+    "certificateUrl": null
+  },
+  {
+    "title": "Advanced C++",
+    "description": "Prof. Kannan Moudgalya, IIT Bombay, NPTEL",
+    "certificate": false,
+    "certificateUrl": null
+  },
+  {
+    "title": "Learning GitHub",
+    "description": "This is a LinkedIn Learning course.",
+    "certificate": true,
+    "certificateUrl": "/portfolio/assets/certificates/Learning GitHub.jpg"
+  },
+  {
+    "title": "Learning Arduino Foundations",
+    "description": "This is a LinkedIn Learning course.",
+    "certificate": true,
+    "certificateUrl": "/portfolio/assets/certificates/Learning Arduino Foundations.jpg",
+    "certificateUrl2": "/portfolio/assets/certificates/arduino-advanced.jpg"
+  },
+  {
+    "title": "C Programming Foundations",
+    "description": "This is a LinkedIn Learning course.",
+    "certificate": true,
+    "certificateUrl": "/portfolio/assets/certificates/Complete Guide to C Programming Foundations.jpg"
+  }
+]
