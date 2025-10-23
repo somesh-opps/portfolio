@@ -1,7 +1,11 @@
-# 🚀✨ Somesh Kumar Sahoo's Portfolio
+# <p align="center" style="font-size:2.5rem; background: linear-gradient(90deg,#ff512f,#dd2476,#1fa2ff,#12d8fa,#a6ffcb); -webkit-background-clip: text; color: transparent;">🚀✨ Somesh Kumar Sahoo's Portfolio ✨🚀</p>
 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:ff512f,100:dd2476&height=180&section=header&text=Somesh%20Kumar%20Sahoo&fontSize=40&fontAlignY=35&desc=Portfolio%20Showcase&descAlignY=60" alt="banner"/>
+</p>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=24&pause=1000&color=FF512F&center=true&vCenter=true&width=435&lines=Hi+there!+I'm+Somesh+Kumar+Sahoo;Welcome+to+my+portfolio+%F0%9F%91%8B;React+%7C+Vite+%7C+Tailwind+%7C+TypeScript+%7C+Fun"/>
 </p>
 
 <p align="center">
@@ -9,6 +13,13 @@
   <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=FFD62E"/>
   <img src="https://img.shields.io/badge/Tailwind-38BDF8?style=for-the-badge&logo=tailwindcss&logoColor=white"/>
   <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white"/>
+</p>
+
+---
+
+<p align="center" style="font-size:1.2rem;">
+  <b>“Code is poetry, and this portfolio is my canvas.”</b><br>
+  <i>— Where pixels dance, gradients flow, and every section tells a story.</i>
 </p>
 
 ---
@@ -23,7 +34,7 @@
 
 ---
 
-## ✨ Features
+<h2 align="center" style="background: linear-gradient(90deg,#ff512f,#dd2476,#1fa2ff,#12d8fa,#a6ffcb); -webkit-background-clip: text; color: transparent;">✨ Features</h2>
 
 - 🎨 **Sleek UI:** Mobile-first, glassmorphic design with smooth gradients and animations.
 - 🧩 **Dynamic Sections:** About, Education, Experience, Skills, Projects, Courses, Events, and Contact.
@@ -35,7 +46,7 @@
 
 ---
 
-## 🛠️ Tech Stack
+<h2 align="center" style="background: linear-gradient(90deg,#ff512f,#dd2476,#1fa2ff,#12d8fa,#a6ffcb); -webkit-background-clip: text; color: transparent;">🛠️ Tech Stack</h2>
 
 | Frontend | Styling | Build Tool | Icons | Data |
 |----------|---------|------------|-------|------|
@@ -44,7 +55,7 @@
 
 ---
 
-## 📂 Project Structure
+<h2 align="center" style="background: linear-gradient(90deg,#ff512f,#dd2476,#1fa2ff,#12d8fa,#a6ffcb); -webkit-background-clip: text; color: transparent;">📂 Project Structure</h2>
 
 ```
 📁 public/           # Static assets (images, certificates, icons)
@@ -60,7 +71,7 @@
 
 ---
 
-## 🚦 Quick Start
+<h2 align="center" style="background: linear-gradient(90deg,#ff512f,#dd2476,#1fa2ff,#12d8fa,#a6ffcb); -webkit-background-clip: text; color: transparent;">🚦 Quick Start</h2>
 
 ```sh
 # 1. Install dependencies
@@ -75,17 +86,17 @@ npm run build
 
 ---
 
-## 🌐 Live Demo
+<h2 align="center" style="background: linear-gradient(90deg,#ff512f,#dd2476,#1fa2ff,#12d8fa,#a6ffcb); -webkit-background-clip: text; color: transparent;">🌐 Live Demo</h2>
 
 <p align="center">
-  <a href="https://somesh-opps.github.io/portfolio" target="_blank">
+  <a href="https://your-portfolio-demo-link.com" target="_blank">
     <img src="https://img.shields.io/badge/Live%20Demo-FF512F?style=for-the-badge&logo=vercel&logoColor=white"/>
   </a>
 </p>
 
 ---
 
-## 🤝 Connect with Me
+<h2 align="center" style="background: linear-gradient(90deg,#ff512f,#dd2476,#1fa2ff,#12d8fa,#a6ffcb); -webkit-background-clip: text; color: transparent;">🤝 Connect with Me</h2>
 
 <p align="center">
   <a href="mailto:someshkumarsahoo28@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
@@ -97,14 +108,15 @@ npm run build
 
 ---
 
-## 💡 Fun Facts
+<h2 align="center" style="background: linear-gradient(90deg,#ff512f,#dd2476,#1fa2ff,#12d8fa,#a6ffcb); -webkit-background-clip: text; color: transparent;">💡 Fun Facts</h2>
 
 - 🏆 Always learning, always building.
 - 🎤 Loves tech talks and hackathons.
 - 🧑‍💻 Code, coffee, and creativity fuel my day.
+- 🌈 I believe in making the web a more beautiful place, one pixel at a time.
 
 ---
 
-<p align="center">
+<p align="center" style="font-size:1.1rem; background: linear-gradient(90deg,#ff512f,#dd2476,#1fa2ff,#12d8fa,#a6ffcb); -webkit-background-clip: text; color: transparent;">
   <b>Designed & built with ❤️, ☕, and a sprinkle of magic by Somesh Kumar Sahoo</b>
 </p>
