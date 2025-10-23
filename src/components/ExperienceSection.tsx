@@ -61,11 +61,11 @@ const ExperienceSection = () => {
       title="Experience"
       subtitle="Practical Learning"
     >
-  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-xs sm:text-base">
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-xs md:text-base">
         {experience.map((exp, index) => (
           <Card
             key={index}
-            className="p-6 hover:shadow-lg transition-all hover:-translate-y-1 h-full"
+            className="p-3 md:p-6 hover:shadow-lg transition-all hover:-translate-y-1 h-full text-xs md:text-base"
           >
             <div className="relative flex flex-col justify-between h-full gap-4">
               {/* top-right icon */}
@@ -73,18 +73,18 @@ const ExperienceSection = () => {
                 <Award size={14} className="text-primary" />
               </div>
               <div>
-                <h4 className="text-xl font-bold mb-1">{exp.name}</h4>
+                <h4 className="text-base md:text-xl font-bold mb-1">{exp.name}</h4>
                 {exp.description && (
-                  <p className="text-sm text-muted-foreground mt-2">{exp.description}</p>
+                  <p className="text-xs md:text-sm text-muted-foreground mt-2">{exp.description}</p>
                 )}
               </div>
 
               <div className="flex items-center justify-between gap-4">
-                <span className="text-sm text-muted-foreground">{exp.type}</span>
+                <span className="text-xs md:text-sm text-muted-foreground">{exp.type}</span>
                 {exp.certificate && (
                   <button
                     onClick={() => handleCertificateClick(exp.name, exp)}
-                    className="text-xs bg-primary/10 text-primary px-3 py-1 rounded-full font-medium hover:bg-primary/20 transition-colors cursor-pointer"
+                    className="text-[10px] md:text-xs bg-primary/10 text-primary px-2 md:px-3 py-0.5 md:py-1 rounded-full font-medium hover:bg-primary/20 transition-colors cursor-pointer"
                   >
                     View Certificate
                   </button>

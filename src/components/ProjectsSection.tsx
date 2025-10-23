@@ -31,14 +31,13 @@ const ProjectsSection = () => {
             className="group bg-card/50 border-muted hover:bg-card/70 transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl overflow-hidden backdrop-blur"
           >
             {/* Project Image */}
-            <div className="relative h-32 md:h-48 overflow-hidden bg-muted">
+            <div className="relative h-0 md:h-48 overflow-hidden bg-muted md:block hidden">
               <img
                 src={project.image}
                 alt={project.title}
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
-              
               {/* Status Badge */}
               <div className="absolute top-3 right-3">
                 <Badge

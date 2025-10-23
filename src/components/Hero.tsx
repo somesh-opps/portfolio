@@ -1,5 +1,5 @@
-import heroBg from "@/assets/hero-bg.jpg";
-import profileImg from "@/assets/profile-placeholder.jpg";
+import heroBg from "/public/hero-bg.jpg";
+import profileImg from "/public/profile-placeholder.jpg";
 
 const Hero = () => {
   return (

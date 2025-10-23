@@ -3,7 +3,7 @@
     "title": "AI Based Child Safety System",
     "description": "An intelligent system designed with Python, OpenCV, Arduino UNO R3, RFID, and an LCD screen for automated child check-in and check-out at schools and daycare centers.",
     "technologies": ["Python", "OpenCV","Ultralytics", "Arduino", "RFID", "PYWhat Kit"],
-    "image": "/portfolio/src/assets/projects/AI Based Child Safety System.png",
+  "image": "/portfolio/public/projects/AI Based Child Safety System.png",
     "liveLink": "#",
     "githubLink": "#",
     "status": "Completed"
@@ -12,7 +12,7 @@
     "title": "FarmBot: Smart Agriculture System",
     "description": "A chatBot to help the farmers with there crop related queries and to provide them with the best possible solutions.",
     "technologies": ["Python", "JavaScript", "Gemini APIs", "Firebase"],
-    "image": "/portfolio/src/assets/projects/FarmBot Smart Agriculture System.png",
+  "image": "/portfolio/public/projects/FarmBot Smart Agriculture System.png",
     "liveLink": "#",
     "githubLink": "#",
     "status": "In Progress"
@@ -21,7 +21,7 @@
     "title": "Weather Dashboard",
     "description": "Interactive weather dashboard displaying real-time weather data with forecasts and beautiful visualizations.",
     "technologies": ["JavaScript", "API Integration", "Chart.js", "CSS"],
-    "image": "/portfolio/src/assets/projects/Weather Dashboard.jpg",
+  "image": "/portfolio/public/projects/Weather Dashboard.jpg",
     "liveLink": "#",
     "githubLink": "#",
     "status": "In Progress"
@@ -30,7 +30,7 @@
     "title": "Bluethooth Controlled Car",
     "description": "A car that can be controlled using a mobile app via Bluetooth technology.",
     "technologies": ["C++", "Bluetooth", "Arduino", "MQTT"],
-    "image": "/portfolio/src/assets/projects/Bluethooth Controlled Car.png",
+  "image": "/portfolio/public/projects/Bluethooth Controlled Car.png",
     "liveLink": "#",
     "githubLink": "#",
     "status": "Completed"

@@ -69,16 +69,16 @@ const EventsSection = () => {
             className="p-6 hover:shadow-lg transition-all hover:-translate-y-1"
           >
             <div className="flex items-start gap-4">
-              <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                <CalendarDays className="text-accent" size={24} />
+              <div className="w-8 h-8 bg-accent/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                <CalendarDays className="text-accent" size={16} />
               </div>
               <div>
                 <h4 className="text-base font-bold mb-2">'{event.name}'</h4>
-                <p className="text-sm text-muted-foreground mb-3 leading-relaxed">{event.description}</p>
+                <p className="text-xs md:text-sm text-muted-foreground mb-3 leading-relaxed">{event.description}</p>
                 {event.certificate && event.certificateUrl && (
                   <button
                     onClick={() => handleCertificateClick(event.name, event)}
-                    className="text-xs bg-accent/10 text-accent px-3 py-1 rounded-full font-medium hover:bg-accent/20 transition-colors cursor-pointer inline-block"
+                    className="text-[10px] md:text-xs bg-accent/10 text-accent px-2 md:px-3 py-0.5 md:py-1 rounded-full font-medium hover:bg-accent/20 transition-colors cursor-pointer inline-block"
                   >
                     Certificate Awarded
                   </button>

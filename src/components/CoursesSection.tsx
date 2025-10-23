@@ -69,7 +69,7 @@ const CoursesSection = () => {
   return (
     <Section
       id="courses"
-      title="Courses & Certifications"
+      title="Courses"
       subtitle="CONTINUOUS LEARNING"
       className="bg-background"
     >
@@ -84,16 +84,21 @@ const CoursesSection = () => {
               className={`p-6 hover:shadow-lg transition-all hover:-translate-y-1 ${shouldHideCourse ? 'md:block hidden' : ''}`}
             >
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <BookOpen className="text-primary" size={24} />
+                <div className="bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0 w-8 h-8 md:w-12 md:h-12">
+                  <span className="flex md:hidden items-center justify-center w-6 h-6">
+                    <BookOpen className="text-primary" size={16} />
+                  </span>
+                  <span className="hidden md:flex items-center justify-center w-8 h-8">
+                    <BookOpen className="text-primary" size={20} />
+                  </span>
                 </div>
                 <div className="flex-1">
-                  <h4 className="text-sm md:text-base font-bold mb-2">'{course.title}'</h4>
+                  <h4 className="text-sm md:text-base font-bold mb-2">{course.title}</h4>
                   <p className="text-xs text-muted-foreground mb-3 leading-relaxed">{course.description}</p>
                   {course.certificate && course.certificateUrl ? (
                     <button
                       onClick={() => handleCertificateClick(course.title, course)}
-                      className="text-xs bg-primary/10 text-primary px-3 py-1 rounded-full font-medium hover:bg-primary/20 transition-colors cursor-pointer inline-block"
+                      className="text-[10px] md:text-xs bg-primary/10 text-primary px-2 md:px-3 py-0.5 md:py-1 rounded-full font-medium hover:bg-primary/20 transition-colors cursor-pointer inline-block"
                     >
                       Certificate Awarded
                     </button>
@@ -114,9 +119,12 @@ const CoursesSection = () => {
         <div className="flex justify-center mt-4 md:hidden">
           <button
             onClick={() => setShowAllCourses(!showAllCourses)}
-            className="px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors"
+            className="px-3 py-2 text-sm bg-primary text-primary-foreground rounded-md font-medium flex items-center gap-2 hover:bg-primary/90 transition-colors"
           >
             {showAllCourses ? "View Less" : "View More"}
+            <span className={showAllCourses ? "rotate-180 transition-transform" : "transition-transform"}>
+              <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+            </span>
           </button>
         </div>
       )}

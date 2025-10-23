@@ -3,61 +3,61 @@
     "title": "Developing Soft Skills and Personality",
     "description": "This is a NPTEL course by Prof. T. Ravichandran, IIT Kanpur.",
     "certificate": true,
-    "certificateUrl": "/portfolio/src/assets/courses/Developing Soft Skills and Personality.jpg"
+  "certificateUrl": "/portfolio/public/courses/Developing Soft Skills and Personality.jpg"
   },
   {
     "title": "Google AI Essentials",
     "description": "This is a Coursera course by Google.",
     "certificate": true,
-    "certificateUrl": "/portfolio/src/assets/courses/Google AI Essentials.jpg"
+  "certificateUrl": "/portfolio/public/courses/Google AI Essentials.jpg"
   },
   {
     "title": "Python Crash Course",
     "description": "This is a Coursera course by Google.",
     "certificate": true,
-    "certificateUrl": "/portfolio/src/assets/courses/Python Crash Course.jpg"
+  "certificateUrl": "/portfolio/public/courses/Python Crash Course.jpg"
   },
   {
     "title": " Cyber Security Fundamentals",
     "description": "University of London, Coursera",
     "certificate": true,
-    "certificateUrl": "/portfolio/src/assets/courses/Cyber Security Fundamentals.jpg"
+  "certificateUrl": "/portfolio/public/courses/Cyber Security Fundamentals.jpg"
   },
   {
     "title": "Getting Started with AWS Generative AI for Developers",
     "description": "Amazon Web Services, Coursera",
     "certificate": true,
-    "certificateUrl": "/portfolio/src/assets/courses/Getting Started with AWS Generative AI for Developers.jpg"
+  "certificateUrl": "/portfolio/public/courses/Getting Started with AWS Generative AI for Developers.jpg"
   },
   {
     "title": "Introduction to Security Principles in Cloud Computing",
     "description": "Google Cloud, Coursera",
     "certificate": true,
-    "certificateUrl": "/portfolio/src/assets/courses/Introduction to Security Principles in Cloud Computing.jpg"
+  "certificateUrl": "/portfolio/public/courses/Introduction to Security Principles in Cloud Computing.jpg"
   },
   {
     "title": "Generative AI for Everyone",
     "description": "DeepLearning.AI, Coursera",
     "certificate": true,
-    "certificateUrl": "/portfolio/src/assets/courses/Generative AI for Everyone.jpg"
+  "certificateUrl": "/portfolio/public/courses/Generative AI for Everyone.jpg"
   },
   {
     "title": " Introduction to Information Technology and AWS Cloud",
     "description": "Amazon Web Services, Coursera",
     "certificate": true,
-    "certificateUrl": "/portfolio/src/assets/courses/Introduction to Information Technology and AWS Cloud.jpg"
+  "certificateUrl": "/portfolio/public/courses/Introduction to Information Technology and AWS Cloud.jpg"
   },
   {
     "title": "HTML, CSS, and Javascript for Web Developers",
     "description": "Johns Hopkins University, Coursera",
     "certificate": true,
-    "certificateUrl": "/portfolio/src/assets/courses/HTML, CSS, and Javascript for Web Developers.jpg"
+  "certificateUrl": "/portfolio/public/courses/HTML, CSS, and Javascript for Web Developers.jpg"
   },
   {
     "title": "Create and Design Digital Products using Canva",
     "description": "Coursera Project Network, Coursera",
     "certificate": true,
-    "certificateUrl": "/portfolio/src/assets/courses/Create and Design Digital Products using Canva.jpg"
+  "certificateUrl": "/portfolio/public/courses/Create and Design Digital Products using Canva.jpg"
   },
   {
     "title": "C and C++",
@@ -81,18 +81,18 @@
     "title": "Learning GitHub",
     "description": "This is a LinkedIn Learning course.",
     "certificate": true,
-    "certificateUrl": "/portfolio/src/assets/courses/Learning GitHub.jpg"
+  "certificateUrl": "/portfolio/public/courses/Learning GitHub.jpg"
   },
   {
     "title": "Learning Arduino Foundations",
     "description": "This is a LinkedIn Learning course.",
     "certificate": true,
-    "certificateUrl": "/portfolio/src/assets/courses/Learning Arduino Foundations.jpg"
+  "certificateUrl": "/portfolio/public/courses/Learning Arduino Foundations.jpg"
   },
   {
     "title": "C Programming Foundations",
     "description": "This is a LinkedIn Learning course.",
     "certificate": true,
-    "certificateUrl": "/portfolio/src/assets/courses/Complete Guide to C Programming Foundations.jpg"
+  "certificateUrl": "/portfolio/public/courses/Complete Guide to C Programming Foundations.jpg"
   }
 ]
