@@ -1,4 +1,4 @@
-# <p align="center" style="font-size:2.5rem; background: linear-gradient(90deg,#ff512f,#dd2476,#1fa2ff,#12d8fa,#a6ffcb); -webkit-background-clip: text; color: transparent;">🚀✨ Somesh Kumar Sahoo's Portfolio ✨🚀</p>
+# <div align="center" style="font-size:2.5rem; background: linear-gradient(90deg,#ff512f,#dd2476,#1fa2ff,#12d8fa,#a6ffcb); -webkit-background-clip: text; color: transparent;">🚀✨ Somesh Kumar Sahoo's Portfolio ✨🚀</div>
 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:ff512f,100:dd2476&height=180&section=header&text=Somesh%20Kumar%20Sahoo&fontSize=40&fontAlignY=35&desc=Portfolio%20Showcase&descAlignY=60" alt="banner"/>
@@ -36,26 +36,36 @@
 
 <h2 align="center" style="background: linear-gradient(90deg,#ff512f,#dd2476,#1fa2ff,#12d8fa,#a6ffcb); -webkit-background-clip: text; color: transparent;">✨ Features</h2>
 
-- 🎨 **Sleek UI:** Mobile-first, glassmorphic design with smooth gradients and animations.
-- 🧩 **Dynamic Sections:** About, Education, Experience, Skills, Projects, Courses, Events, and Contact.
-- 🖱️ **Interactive Cards:** Hover effects, modals for certificates, and project previews.
-- 🌐 **Social Links:** Connect with me on LinkedIn, GitHub, X.com, and Discord.
-- 📱 **Fully Responsive:** Gorgeous on every device, from phone to desktop.
-- ⚡ **Lightning Fast:** Powered by Vite, optimized for instant loads.
-- 🛡️ **Secure & Modern:** TypeScript, best practices, and clean code.
+<div align="center">
+<ul>
+<li>🎨 <b>Sleek UI:</b> Mobile-first, glassmorphic design with smooth gradients and animations.</li>
+<li>🧩 <b>Dynamic Sections:</b> About, Education, Experience, Skills, Projects, Courses, Events, and Contact.</li>
+<li>🖱️ <b>Interactive Cards:</b> Hover effects, modals for certificates, and project previews.</li>
+<li>🌐 <b>Social Links:</b> Connect with me on LinkedIn, GitHub, X.com, and Discord.</li>
+<li>📱 <b>Fully Responsive:</b> Gorgeous on every device, from phone to desktop.</li>
+<li>⚡ <b>Lightning Fast:</b> Powered by Vite, optimized for instant loads.</li>
+<li>🛡️ <b>Secure & Modern:</b> TypeScript, best practices, and clean code.</li>
+</ul>
+</div>
 
 ---
 
 <h2 align="center" style="background: linear-gradient(90deg,#ff512f,#dd2476,#1fa2ff,#12d8fa,#a6ffcb); -webkit-background-clip: text; color: transparent;">🛠️ Tech Stack</h2>
+
+<div align="center">
 
 | Frontend | Styling | Build Tool | Icons | Data |
 |----------|---------|------------|-------|------|
 | React ⚛️ | Tailwind CSS 🌈 | Vite 🚀 | Lucide, SVGs 🎨 | JSON 📄 |
 | TypeScript 🦄 |      |            |       |      |
 
+</div>
+
 ---
 
 <h2 align="center" style="background: linear-gradient(90deg,#ff512f,#dd2476,#1fa2ff,#12d8fa,#a6ffcb); -webkit-background-clip: text; color: transparent;">📂 Project Structure</h2>
+
+<div align="center">
 
 ```
 📁 public/           # Static assets (images, certificates, icons)
@@ -69,9 +79,13 @@
 ⚙️ vite.config.ts
 ```
 
+</div>
+
 ---
 
 <h2 align="center" style="background: linear-gradient(90deg,#ff512f,#dd2476,#1fa2ff,#12d8fa,#a6ffcb); -webkit-background-clip: text; color: transparent;">🚦 Quick Start</h2>
+
+<div align="center">
 
 ```sh
 # 1. Install dependencies
@@ -83,6 +97,8 @@ npm run dev
 # 3. Build for production
 npm run build
 ```
+
+</div>
 
 ---
 
@@ -110,10 +126,14 @@ npm run build
 
 <h2 align="center" style="background: linear-gradient(90deg,#ff512f,#dd2476,#1fa2ff,#12d8fa,#a6ffcb); -webkit-background-clip: text; color: transparent;">💡 Fun Facts</h2>
 
-- 🏆 Always learning, always building.
-- 🎤 Loves tech talks and hackathons.
-- 🧑‍💻 Code, coffee, and creativity fuel my day.
-- 🌈 I believe in making the web a more beautiful place, one pixel at a time.
+<div align="center">
+<ul>
+<li>🏆 Always learning, always building.</li>
+<li>🎤 Loves tech talks and hackathons.</li>
+<li>🧑‍💻 Code, coffee, and creativity fuel my day.</li>
+<li>🌈 I believe in making the web a more beautiful place, one pixel at a time.</li>
+</ul>
+</div>
 
 ---
 
