@@ -134,7 +134,7 @@ const ContactSection = () => {
             {/* Social Links */}
             <div className="flex justify-center lg:justify-start gap-6 mt-10 mb-6 -ml-32">
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/someshkumarsahoo/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-12 h-12 bg-blue-100 hover:bg-blue-200 rounded-lg flex items-center justify-center transition-all hover:scale-110 group relative"
@@ -144,7 +144,7 @@ const ContactSection = () => {
                 <span className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 text-foreground text-xs font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-200">LinkedIn</span>
               </a>
               <a
-                href="https://github.com"
+                href="https://github.com/somesh-opps"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-12 h-12 bg-blue-100 hover:bg-blue-200 rounded-lg flex items-center justify-center transition-all hover:scale-110 group relative"
@@ -154,7 +154,7 @@ const ContactSection = () => {
                 <span className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 text-foreground text-xs font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-200">GitHub</span>
               </a>
               <a
-                href="https://twitter.com"
+                href="https://x.com/someshsahoo_"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-12 h-12 bg-blue-100 hover:bg-blue-200 rounded-lg flex items-center justify-center transition-all hover:scale-110 group relative"
@@ -164,7 +164,7 @@ const ContactSection = () => {
                 <span className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 text-foreground text-xs font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-200">Twitter</span>
               </a>
               <a
-                href="https://discord.com/users/YOUR_DISCORD_ID"
+                href="https://discord.com/users/someshsahoo_"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-12 h-12 bg-blue-100 hover:bg-blue-200 rounded-lg flex items-center justify-center transition-all hover:scale-110 group relative"

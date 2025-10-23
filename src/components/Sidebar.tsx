@@ -1,6 +1,6 @@
 import { Linkedin, Github, Twitter, Mail, Phone, Menu, X } from "lucide-react";
 import { useState } from "react";
-import profileImg from "/public/profile-placeholder.jpg";
+import profileImg from "@/assets/profile-placeholder.jpg";
 
 const Sidebar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -86,7 +86,7 @@ const Sidebar = () => {
 
         <div className="flex gap-4 mb-10 animate-slideInLeft" style={{ animationDelay: "0.2s" }}>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/someshkumarsahoo/"
             target="_blank"
             rel="noopener noreferrer"
             className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-lg flex items-center justify-center transition-all hover:scale-110"
@@ -95,7 +95,7 @@ const Sidebar = () => {
             <Linkedin size={20} className="text-primary-foreground" />
           </a>
           <a
-            href="https://github.com"
+            href="https://github.com/somesh-opps"
             target="_blank"
             rel="noopener noreferrer"
             className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-lg flex items-center justify-center transition-all hover:scale-110"
@@ -104,7 +104,7 @@ const Sidebar = () => {
             <Github size={20} className="text-primary-foreground" />
           </a>
           <a
-            href="https://twitter.com"
+            href="https://x.com/someshsahoo_"
             target="_blank"
             rel="noopener noreferrer"
             className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-lg flex items-center justify-center transition-all hover:scale-110"
@@ -113,7 +113,7 @@ const Sidebar = () => {
             <Twitter size={20} className="text-primary-foreground" />
           </a>
           <a
-            href="https://discord.com/users/your-discord-id"
+            href="https://discord.com/users/someshsahoo_"
             target="_blank"
             rel="noopener noreferrer"
             className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-lg flex items-center justify-center transition-all hover:scale-110"
