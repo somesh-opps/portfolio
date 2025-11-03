@@ -32,14 +32,8 @@
     "type": "Coding Competition",
     "certificate": true,
     "certificateUrl": "/portfolio/assets/experience/script grid.jpg",
+    "certificateUrl2": "/portfolio/assets/experience/script grid 2.0.png",
     "description": "Competitive coding events that challenged algorithmic and problem-solving skills."
-  },
-  {
-    "name": "Script Grid 2.0",
-    "type": "Coding Competition",
-    "certificate": true,
-    "certificateUrl": "/portfolio/assets/experience/script grid 2.0.png",
-    "description": "Advanced competitive coding event with more complex algorithmic challenges."
   },
   {
     "name": "Ucode 10.0",
