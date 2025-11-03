@@ -3,50 +3,49 @@
     "name": "Innovation Battle",
     "type": "Project Competition",
     "certificate": true,
-  "certificateUrl": "/portfolio/src/assets/experience/Innovation Battle.jpg",
+    "certificateUrl": "/portfolio/assets/experience/Innovation Battle.jpg",
     "description": "A collaborative project competition where teams developed innovative solutions to real-world problems."
   },
   {
     "name": "The Viksit Bharat Quiz",
     "type": "Quiz Competition",
     "certificate": true,
-  "certificateUrl": "/portfolio/src/assets/experience/The Viksit Bharat Quiz.jpg",
+    "certificateUrl": "/portfolio/assets/experience/The Viksit Bharat Quiz.jpg",
     "description": "The quiz tests knowledge on various aspect of the country and vision towards Viksit Bharat."
   },
   {
     "name": "MystiCanvas",
     "type": "Flyer Competition",
     "certificate": true,
-  "certificateUrl": "/portfolio/src/assets/experience/MystiCanvas.png",
+    "certificateUrl": "/portfolio/assets/experience/MystiCanvas.png",
     "description": "A flyer design competition using Gemini Ai tool to create visually appealing designs."
   },
   {
     "name": "Hack Snippet 3.0",
     "type": "Hackathon",
     "certificate": true,
-  "certificateUrl": "/portfolio/src/assets/experience/Hack Snippet 3.0.png",
+    "certificateUrl": "/portfolio/assets/experience/Hack Snippet 3.0.png",
     "description": "An intense 24-hour hackathon focused on building AI and ML prototypes."
-  },
-  {
-    "name": "Coding Ninja",
-    "type": "Coding Competition",
-    "certificate": true,
-  "certificateUrl": "/portfolio/src/assets/experience/Coding Ninja.jpg",
-    "description": "A competitive coding event that tested algorithmic skills and problem-solving abilities."
   },
   {
     "name": "Script Grid",
     "type": "Coding Competition",
     "certificate": true,
-  "certificateUrl": "/portfolio/src/assets/experience/script grid.jpg",
-  "certificateUrl2": "/portfolio/src/assets/experience/script grid 2.0.png",
+    "certificateUrl": "/portfolio/assets/experience/script grid.jpg",
     "description": "Competitive coding events that challenged algorithmic and problem-solving skills."
+  },
+  {
+    "name": "Script Grid 2.0",
+    "type": "Coding Competition",
+    "certificate": true,
+    "certificateUrl": "/portfolio/assets/experience/script grid 2.0.png",
+    "description": "Advanced competitive coding event with more complex algorithmic challenges."
   },
   {
     "name": "Ucode 10.0",
     "type": "Hackathon",
     "certificate": true,
-  "certificateUrl": "/portfolio/src/assets/experience/ucode 10.0.jpg",
+    "certificateUrl": "/portfolio/assets/experience/ucode 10.0.jpg",
     "description": "A student-led hackathon emphasizing collaboration and rapid prototyping."
   }
 ]

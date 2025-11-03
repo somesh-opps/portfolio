@@ -144,5 +144,5 @@ npm run build
 ---
 
 <p align="center" style="font-size:1.1rem; background: linear-gradient(90deg,#ff512f,#dd2476,#1fa2ff,#12d8fa,#a6ffcb); -webkit-background-clip: text; color: transparent;">
-  <b>Designed & built with ❤️, ☕, and a sprinkle of magic by Somesh Kumar Sahoo</b>
+  <b>Designed & built with ❤️, ☕, and a sprinkle of magic by Somesh</b>
 </p>
