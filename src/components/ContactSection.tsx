@@ -98,15 +98,15 @@ const ContactSection = () => {
               <div className="lg:w-1/2 lg:text-right space-y-4">
                   {/* Desktop-only boxed contact cards */}
                   <div className="hidden lg:flex lg:justify-end">
-                    <div className="w-full max-w-md">
+                    <div className="w-fit">
                       {/* Email card */}
-                    <div className="p-4 rounded-lg border border-slate-200 bg-white transition-shadow duration-200 hover:shadow-lg">
+                    <div className="p-4 rounded-lg border border-slate-200 bg-white transition-shadow duration-200 hover:shadow-lg w-fit">
                         <div className="flex items-start gap-3">
                           <div className="w-10 h-10 rounded-md bg-purple-50 flex items-center justify-center mt-1">
                             <Mail size={18} className="text-purple-600" />
                           </div>
                           <div className="min-w-0 pl-0">
-                            <div className="text-xs text-slate-400">Email</div>
+                            <div className="text-xs text-slate-400">EMAIL</div>
                             <a href="mailto:someshkumarsahoo28@gmail.com" className="font-semibold text-sm text-slate-900 break-words">someshkumarsahoo28@gmail.com</a>
                           </div>
                         </div>
@@ -120,7 +120,7 @@ const ContactSection = () => {
                               <Phone size={18} className="text-purple-600" />
                             </div>
                             <div className="min-w-0 pl-0">
-                              <div className="text-xs text-slate-400">Phone</div>
+                              <div className="text-xs text-slate-400">PHONE</div>
                               <a href="tel:+919614175335" className="font-semibold text-sm text-slate-900">+91 96141 75335</a>
                             </div>
                           </div>
