@@ -23,7 +23,7 @@ const ProjectsSection = () => {
       title="Projects"
       subtitle="MY WORK"
     >
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-6xl mx-auto text-xs sm:text-base">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 max-w-7xl mx-auto text-xs sm:text-base">
         {projects.map((project, index) => (
           <Card
             key={index}

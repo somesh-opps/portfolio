@@ -180,7 +180,7 @@ const ContactSection = () => {
         </div>
         
         {/* Copyright Footer - Visible on all devices */}
-        <div className="mt-8 pt-2 text-center text-xs lg:text-[0.8rem] text-muted-foreground">
+        <div className="mt-8 lg:mt-16 pt-2 text-center text-xs lg:text-[0.8rem] text-muted-foreground">
           © {new Date().getFullYear()} Designed & built with a sprinkle of magic by Somesh
         </div>
       </div>

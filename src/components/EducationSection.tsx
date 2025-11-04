@@ -45,7 +45,7 @@ const EducationSection = () => {
           {education.map((edu, index) => (
             <div key={index} className="relative flex items-start mb-6 md:mb-12 last:mb-0">
               {/* Timeline icon - hidden on mobile */}
-              <div className="absolute left-2 w-12 h-12 bg-black rounded-full items-center justify-center z-10 mt-2 shadow-sm hidden md:flex">
+              <div className="absolute left-2 w-12 h-12 bg-muted rounded-full items-center justify-center z-10 mt-2 shadow-sm hidden md:flex">
                 <GraduationCap className="text-primary w-8 h-8" />
               </div>
               
@@ -53,7 +53,7 @@ const EducationSection = () => {
               <div className="ml-0 md:ml-16 w-full">
                 <Card className="p-2 md:p-6 glow-on-hover bg-card/50 backdrop-blur border-muted relative text-xs md:text-base">
                   {/* Mobile icon - top right corner */}
-                  <div className="absolute top-4 right-4 w-8 h-8 bg-black rounded-full flex items-center justify-center md:hidden">
+                  <div className="absolute top-4 right-4 w-8 h-8 bg-muted rounded-full flex items-center justify-center md:hidden">
                     <GraduationCap className="text-primary w-5 h-5" />
                   </div>
                   

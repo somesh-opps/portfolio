@@ -42,6 +42,12 @@ export default {
           DEFAULT: "hsl(var(--accent))",
           foreground: "hsl(var(--accent-foreground))",
         },
+        teal: {
+          DEFAULT: "#14b8a6", // Tailwind teal-500
+          light: "#2dd4bf",   // Tailwind teal-400
+          dark: "#0f766e",   // Tailwind teal-700
+          foreground: "#ffffff"
+        },
         popover: {
           DEFAULT: "hsl(var(--popover))",
           foreground: "hsl(var(--popover-foreground))",

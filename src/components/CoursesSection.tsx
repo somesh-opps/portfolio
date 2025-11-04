@@ -131,7 +131,7 @@ const CoursesSection = () => {
         <DialogContent className="max-w-4xl max-h-[90vh]">
           <DialogHeader>
             <DialogTitle className="flex items-center justify-between">
-              <span>Certificate - {selectedCertificates?.name}</span>
+              <span className="text-sm md:text-base">Certificate - {selectedCertificates?.name}</span>
               {selectedCertificates && selectedCertificates.urls.length > 1 && (
                 <span className="text-sm text-muted-foreground">
                   {currentCertificateIndex + 1} of {selectedCertificates.urls.length}
