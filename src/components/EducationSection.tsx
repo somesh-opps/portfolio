@@ -35,7 +35,7 @@ const EducationSection = () => {
       id="education"
       title="Education"
       subtitle="ACADEMIC BACKGROUND"
-      className="bg-muted/50"
+      className="md:bg-muted/50"
     >
       <div className="max-w-4xl mx-auto">
         <div className="relative">
@@ -51,7 +51,7 @@ const EducationSection = () => {
               
               {/* Content */}
               <div className="ml-0 md:ml-16 w-full">
-                <Card className="p-2 md:p-6 glow-on-hover bg-card/50 backdrop-blur border-muted relative text-xs md:text-base">
+                <Card className="p-4 md:p-6 glow-on-hover bg-muted/50 md:bg-card/50 backdrop-blur border-muted relative text-xs md:text-base">
                   {/* Mobile icon - top right corner */}
                   <div className="absolute top-4 right-4 w-8 h-8 bg-muted rounded-full flex items-center justify-center md:hidden">
                     <GraduationCap className="text-primary w-5 h-5" />
@@ -69,7 +69,7 @@ const EducationSection = () => {
                   <div className="space-y-2">
                     <h4 className="text-sm md:text-lg font-semibold text-foreground">{edu.institution}</h4>
                     <p className="text-xs md:text-sm text-muted-foreground">{edu.board}</p>
-                    <p className="text-xs md:text-sm text-muted-foreground">{edu.description}</p>
+                    <p className="text-xs md:text-sm text-muted-foreground hidden md:block">{edu.description}</p>
                     <div className="flex items-center gap-2 mt-4">
                       <span className="text-xs md:text-sm font-medium text-muted-foreground">Score:</span>
                       <span className="text-xs md:text-sm text-muted-foreground">

@@ -41,8 +41,8 @@ const SkillBar = ({ name, level }: Skill) => {
   }, [level]);
 
   return (
-    <div ref={barRef} className="mb-4">
-      <div className="flex justify-between mb-2">
+    <div ref={barRef} className="mb-2 md:mb-4">
+      <div className="flex justify-between mb-1 md:mb-2">
         <span className="text-xs md:text-sm font-medium text-foreground">{name}</span>
         <span className="text-xs text-primary font-semibold">{level}%</span>
       </div>
@@ -190,7 +190,7 @@ const SkillsSection = () => {
       id="skills"
       title="Skills"
       subtitle="TECHNICAL PROFICIENCY"
-      className="bg-muted/50"
+      className="md:bg-muted/50"
     >
       <div className="grid md:grid-cols-2 gap-6 mb-12">
         {skillCategories.map((category, index) => {
@@ -198,9 +198,9 @@ const SkillsSection = () => {
           return (
             <Card
               key={index}
-              className="p-2 md:p-6 glow-on-hover bg-black/20 backdrop-blur border-muted"
+              className="p-4 md:p-6 glow-on-hover bg-muted/50 md:bg-black/20 backdrop-blur border-muted"
             >
-              <div className="flex items-center gap-2 mb-1 md:mb-5">
+              <div className="flex items-center gap-2 mb-2 md:mb-5">
                 <Icon className="text-primary" size={18} />
                 <h3 className="text-base font-bold">{category.title}</h3>
               </div>
@@ -214,7 +214,7 @@ const SkillsSection = () => {
         })}
       </div>
 
-      <div className="mt-8 p-4 md:p-8 border border-muted/40 rounded-xl bg-black/20 glow-on-hover">
+      <div className="mt-8 p-4 md:p-8 border border-muted/40 rounded-xl bg-muted/50 md:bg-black/20 glow-on-hover">
         <h3 className="text-xl md:text-2xl font-bold text-center mb-6 md:mb-10">Core Competencies</h3>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 justify-items-center">
           {coreCompetencies.map((competency, index) => (
@@ -223,7 +223,7 @@ const SkillsSection = () => {
         </div>
       </div>
 
-      <div className="mt-8 p-4 md:p-8 border border-muted/40 rounded-xl bg-black/20 glow-on-hover">
+      <div className="mt-8 p-4 md:p-8 border border-muted/40 rounded-xl bg-muted/50 md:bg-black/20 glow-on-hover">
         <h3 className="text-xl md:text-2xl font-bold text-center mb-6 md:mb-10">Tools & Technologies</h3>
         <div className="flex flex-wrap justify-center gap-2 md:gap-3">
           {toolsAndTechnologies.map((tool, index) => (

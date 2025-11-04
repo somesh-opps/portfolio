@@ -69,7 +69,7 @@ const ProjectsSection = () => {
                     </button>
                   )}
                   {project.liveLink && (
-                    <button className="w-8 h-8 bg-accent hover:bg-accent/80 rounded-lg flex items-center justify-center text-accent-foreground transition-all">
+                    <button className="w-8 h-8 bg-primary hover:bg-muted rounded-lg flex items-center justify-center text-primary-foreground hover:text-muted-foreground transition-all">
                       <ExternalLink size={16} />
                     </button>
                   )}

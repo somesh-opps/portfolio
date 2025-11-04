@@ -6,7 +6,7 @@ const AboutSection = () => {
     <Section id="about" title="About me" subtitle="A bit about me">
       <Card className="bg-muted/50 border-border/50 backdrop-blur-sm glow-on-hover">
         <CardContent className="p-8">
-          <p className="text-sm sm:text-lg text-foreground/80 leading-relaxed">
+          <p className="text-xs sm:text-lg text-foreground/80 leading-relaxed">
             Welcome to my portfolio! I'm a passionate computer science student with strong interests in
             programming, software development, and emerging technologies. I enjoy solving problems
             through code and exploring how technology can be applied to real-world challenges. My
