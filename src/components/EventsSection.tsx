@@ -66,7 +66,7 @@ const EventsSection = () => {
         {events.map((event, index) => (
           <Card
             key={index}
-            className="p-6 hover:shadow-lg transition-all hover:-translate-y-1"
+            className="p-6 glow-on-hover"
           >
             <div className="flex items-start gap-4">
               <div className="w-8 h-8 bg-accent/10 rounded-lg flex items-center justify-center flex-shrink-0">

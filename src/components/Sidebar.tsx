@@ -130,7 +130,7 @@ const Sidebar = () => {
             <button
               key={link.id}
               onClick={() => scrollToSection(link.id)}
-              className="text-left py-3 px-4 text-primary-foreground/80 hover:text-primary-foreground hover:bg-white/10 rounded-lg transition-all"
+              className="text-left py-3 px-6 text-sm text-primary-foreground/80 hover:text-primary-foreground hover:bg-white/10 rounded-lg transition-all"
             >
               {link.label}
             </button>

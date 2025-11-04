@@ -61,7 +61,9 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter basename="/portfolio">
-        <AppContent />
+        <div className="dark">
+          <AppContent />
+        </div>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>

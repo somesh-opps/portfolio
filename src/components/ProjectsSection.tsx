@@ -22,13 +22,12 @@ const ProjectsSection = () => {
       id="projects"
       title="Projects"
       subtitle="MY WORK"
-      className="bg-background"
     >
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-6xl mx-auto text-xs sm:text-base">
         {projects.map((project, index) => (
           <Card
             key={index}
-            className="group bg-card/50 border-muted hover:bg-card/70 transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl overflow-hidden backdrop-blur"
+            className="group bg-muted/50 border-muted glow-on-hover overflow-hidden backdrop-blur"
           >
             {/* Project Image */}
             <div className="relative h-0 md:h-48 overflow-hidden bg-muted md:block hidden">

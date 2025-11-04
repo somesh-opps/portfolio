@@ -45,15 +45,15 @@ const EducationSection = () => {
           {education.map((edu, index) => (
             <div key={index} className="relative flex items-start mb-6 md:mb-12 last:mb-0">
               {/* Timeline icon - hidden on mobile */}
-              <div className="absolute left-2 w-12 h-12 bg-white rounded-full items-center justify-center z-10 mt-2 shadow-sm hidden md:flex">
+              <div className="absolute left-2 w-12 h-12 bg-black rounded-full items-center justify-center z-10 mt-2 shadow-sm hidden md:flex">
                 <GraduationCap className="text-primary w-8 h-8" />
               </div>
               
               {/* Content */}
               <div className="ml-0 md:ml-16 w-full">
-                <Card className="p-2 md:p-6 hover:shadow-lg transition-all duration-300 bg-card/50 backdrop-blur border-muted relative text-xs md:text-base">
+                <Card className="p-2 md:p-6 glow-on-hover bg-card/50 backdrop-blur border-muted relative text-xs md:text-base">
                   {/* Mobile icon - top right corner */}
-                  <div className="absolute top-4 right-4 w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center md:hidden">
+                  <div className="absolute top-4 right-4 w-8 h-8 bg-black rounded-full flex items-center justify-center md:hidden">
                     <GraduationCap className="text-primary w-5 h-5" />
                   </div>
                   
@@ -61,7 +61,7 @@ const EducationSection = () => {
                     <div className="flex items-center gap-3 mb-2 md:mb-0">
                       <h3 className="text-base md:text-xl font-bold text-primary">{edu.level}</h3>
                     </div>
-                    <span className="hidden md:inline text-sm font-medium text-muted-foreground bg-muted/50 px-3 py-1 rounded-full">
+                    <span className="hidden md:inline text-sm font-medium text-primary bg-muted/50 px-3 py-1 rounded-full">
                       {edu.year}
                     </span>
                   </div>

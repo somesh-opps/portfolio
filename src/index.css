@@ -8,23 +8,23 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 0 0% 7%;
+    --foreground: 0 0% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 0 0% 12%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 12%;
+    --popover-foreground: 0 0% 98%;
 
     --primary: 238 70% 65%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 217 33% 17%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 98%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 60%;
 
     --accent: 262 83% 58%;
     --accent-foreground: 0 0% 100%;
@@ -32,8 +32,8 @@ All colors MUST be HSL.
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
     --ring: 238 70% 65%;
 
     --radius: 0.75rem;
@@ -42,42 +42,42 @@ All colors MUST be HSL.
     --sidebar-gradient-from: 238 70% 65%;
     --sidebar-gradient-to: 262 83% 58%;
     --hero-overlay: 0 0% 0%;
-    --section-bg: 0 0% 98%;
+    --section-bg: 0 0% 10%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 0 0% 4%;
+    --foreground: 0 0% 98%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 98%;
 
     --primary: 238 70% 65%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 0 0% 98%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 0 0% 12%;
+    --muted-foreground: 0 0% 65%;
 
     --accent: 262 83% 58%;
-    --accent-foreground: 210 40% 98%;
+    --accent-foreground: 0 0% 98%;
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
+    --border: 0 0% 18%;
+    --input: 0 0% 18%;
     --ring: 238 70% 65%;
     
     --sidebar-gradient-from: 238 70% 65%;
     --sidebar-gradient-to: 262 83% 58%;
     --hero-overlay: 0 0% 0%;
-    --section-bg: 217.2 32.6% 17.5%;
+    --section-bg: 0 0% 8%;
   }
 }
 
@@ -120,12 +120,41 @@ All colors MUST be HSL.
     background-clip: text;
   }
   
+  .dark-section {
+    background: hsl(var(--section-bg));
+  }
+  
+  .glow-on-hover {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .glow-on-hover:hover {
+    box-shadow: 0 0 20px hsl(var(--primary) / 0.3), 0 0 40px hsl(var(--primary) / 0.2), 0 0 60px hsl(var(--primary) / 0.1);
+    border-color: hsl(var(--primary) / 0.5);
+    transform: translateY(-2px);
+  }
+  
   .animate-fadeIn {
     animation: fadeIn 0.6s ease-out forwards;
   }
   
   .animate-slideUp {
     animation: slideUp 0.8s ease-out forwards;
+  }
+  
+  .animate-slideInUp {
+    animation: slideInUp 0.8s ease-out forwards;
+  }
+  
+  .animate-bounceIn {
+    animation: bounceIn 1s ease-out forwards;
+  }
+  
+  .animate-typewriter {
+    overflow: hidden;
+    border-right: 2px solid;
+    white-space: nowrap;
+    animation: typewriter 3s steps(30) 1s forwards, blink 1s infinite;
   }
   
   @keyframes fadeIn {
@@ -145,6 +174,53 @@ All colors MUST be HSL.
     to {
       opacity: 1;
       transform: translateY(0);
+    }
+  }
+  
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink {
+    0%, 50% {
+      border-color: transparent;
+    }
+    51%, 100% {
+      border-color: hsl(var(--primary));
+    }
+  }
+  
+  @keyframes slideInUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes bounceIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.3) translateY(50px);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.05) translateY(0);
+    }
+    70% {
+      transform: scale(0.95);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
     }
   }
 }

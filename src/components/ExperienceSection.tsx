@@ -65,7 +65,7 @@ const ExperienceSection = () => {
         {experience.map((exp, index) => (
           <Card
             key={index}
-            className="p-3 md:p-6 hover:shadow-lg transition-all hover:-translate-y-1 h-full text-xs md:text-base"
+            className="p-3 md:p-6 glow-on-hover bg-muted/50 h-full text-xs md:text-base"
           >
             <div className="relative flex flex-col justify-between h-full gap-4">
               {/* top-right icon */}

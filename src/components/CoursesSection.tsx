@@ -58,8 +58,6 @@ const CoursesSection = () => {
 
   // Determine which courses to show based on screen size and state
   const getCoursesToShow = () => {
-    // On mobile, show limited courses based on showAllCourses state
-    // On desktop/tablet, always show all courses
     return courses;
   };
 
@@ -71,7 +69,6 @@ const CoursesSection = () => {
       id="courses"
       title="Courses"
       subtitle="CONTINUOUS LEARNING"
-      className="bg-background"
     >
   <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 text-xs">
         {coursesToDisplay.map((course, index) => {
@@ -81,7 +78,7 @@ const CoursesSection = () => {
           return (
             <Card
               key={index}
-              className={`p-6 hover:shadow-lg transition-all hover:-translate-y-1 ${shouldHideCourse ? 'md:block hidden' : ''}`}
+              className={`p-6 glow-on-hover bg-muted/50 ${shouldHideCourse ? 'md:block hidden' : ''}`}
             >
               <div className="flex items-start gap-4">
                 <div className="bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0 w-8 h-8 md:w-12 md:h-12">

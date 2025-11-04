@@ -16,7 +16,7 @@ const Hero = () => {
 
       <div className="relative z-10 text-center px-6 max-w-4xl">
         {/* Profile image - only visible on mobile/tablet */}
-        <div className="lg:hidden w-48 h-48 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-white/20 mb-6 shadow-2xl mx-auto">
+        <div className="lg:hidden w-48 h-48 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-white/20 mb-6 shadow-2xl mx-auto animate-bounceIn">
           <img
             src={profileImg}
             alt="Somesh Kumar Sahoo"
@@ -24,15 +24,15 @@ const Hero = () => {
           />
         </div>
         
-        <p className="text-primary-foreground/80 text-base md:text-xl mb-4 font-light tracking-wide">
+        <p className="text-primary-foreground/80 text-base md:text-xl mb-4 font-light tracking-wide animate-fadeIn opacity-0" style={{ animationDelay: '0.5s', animationFillMode: 'forwards' }}>
           HELLO, I'M
         </p>
         
-        <h1 className="text-4xl md:text-7xl lg:text-8xl font-bold text-primary-foreground mb-6 leading-tight">
+        <h1 className="text-4xl md:text-7xl lg:text-8xl font-bold text-primary-foreground mb-6 leading-tight animate-slideInUp opacity-0" style={{ animationDelay: '1s', animationFillMode: 'forwards' }}>
           Somesh Kumar Sahoo
         </h1>
         
-        <p className="text-base md:text-2xl text-primary-foreground/90 max-w-3xl mx-auto leading-relaxed">
+        <p className="text-base md:text-2xl text-primary-foreground/90 max-w-3xl mx-auto leading-relaxed animate-fadeIn opacity-0" style={{ animationDelay: '1.5s', animationFillMode: 'forwards' }}>
           A second year B. Tech student specialising in Computer Science and Technology (CST).
         </p>
       </div>
