@@ -3,14 +3,15 @@ import { Card } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { BookOpen, Award, ChevronLeft, ChevronRight } from "lucide-react";
 import { useState } from "react";
+import { useIsMobile } from "@/hooks/use-mobile";
 import coursesData from "@/data/courses.json";
 
 const CoursesSection = () => {
   const courses = coursesData;
+  const isMobile = useIsMobile();
   const [selectedCertificates, setSelectedCertificates] = useState<{name: string, urls: string[]} | null>(null);
   const [currentCertificateIndex, setCurrentCertificateIndex] = useState(0);
   const [isDialogOpen, setIsDialogOpen] = useState(false);
-  const [showAllCourses, setShowAllCourses] = useState(false);
 
   // Helper function to extract all certificate URLs from a course object
   const getCertificateUrls = (course: Record<string, unknown>): string[] => {
@@ -56,13 +57,7 @@ const CoursesSection = () => {
     }
   };
 
-  // Determine which courses to show based on screen size and state
-  const getCoursesToShow = () => {
-    return courses;
-  };
 
-  const coursesToDisplay = getCoursesToShow();
-  const shouldShowViewMore = courses.length > 6;
 
   return (
     <Section
@@ -70,15 +65,47 @@ const CoursesSection = () => {
       title="Courses"
       subtitle="CONTINUOUS LEARNING"
     >
-  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 text-xs">
-        {coursesToDisplay.map((course, index) => {
-          // On mobile, hide courses beyond index 5 (6th course) if showAllCourses is false
-          const shouldHideCourse = !showAllCourses && index >= 6;
-          
-          return (
+      {/* Mobile: Horizontal scroll layout */}
+      {isMobile ? (
+        <div className="overflow-x-auto overflow-y-visible pt-4 pb-4 -mx-6 pr-6">
+          <div className="flex gap-4 w-max py-2">
+            {courses.map((course, index) => (
+              <Card
+                key={index}
+                className="p-3 glow-on-hover bg-muted/50 text-xs flex-shrink-0 w-64 h-40"
+              >
+                <div className="flex items-start gap-3">
+                  <div className="bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0 w-8 h-8">
+                    <BookOpen className="text-primary" size={16} />
+                  </div>
+                  <div className="flex-1">
+                    <h4 className="text-sm font-bold mb-2">{course.title}</h4>
+                    <p className="text-xs text-muted-foreground mb-3 leading-relaxed line-clamp-3">{course.description}</p>
+                    {course.certificate && course.certificateUrl ? (
+                      <button
+                        onClick={() => handleCertificateClick(course.title, course)}
+                        className="text-[10px] bg-primary/10 text-primary px-2 py-0.5 rounded-full font-medium hover:bg-primary/20 transition-colors cursor-pointer inline-block"
+                      >
+                        Certificate Awarded
+                      </button>
+                    ) : (
+                      <span className="text-xs bg-blue-500/10 text-blue-600 px-3 py-1 rounded-full font-medium inline-block">
+                        In Progress
+                      </span>
+                    )}
+                  </div>
+                </div>
+              </Card>
+            ))}
+          </div>
+        </div>
+      ) : (
+        /* Tablet/Desktop: Grid layout */
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 text-xs">
+          {courses.map((course, index) => (
             <Card
               key={index}
-              className={`p-6 glow-on-hover bg-muted/50 ${shouldHideCourse ? 'md:block hidden' : ''}`}
+              className="p-6 glow-on-hover bg-muted/50"
             >
               <div className="flex items-start gap-4">
                 <div className="bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0 w-8 h-8 md:w-12 md:h-12">
@@ -107,22 +134,7 @@ const CoursesSection = () => {
                 </div>
               </div>
             </Card>
-          );
-        })}
-      </div>
-      
-      {/* View More/Less Button - Mobile Only */}
-      {shouldShowViewMore && (
-        <div className="flex justify-center mt-4 md:hidden">
-          <button
-            onClick={() => setShowAllCourses(!showAllCourses)}
-            className="px-3 py-2 text-sm bg-primary text-primary-foreground rounded-md font-medium flex items-center gap-2 hover:bg-primary/90 transition-colors"
-          >
-            {showAllCourses ? "View Less" : "View More"}
-            <span className={showAllCourses ? "rotate-180 transition-transform" : "transition-transform"}>
-              <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
-            </span>
-          </button>
+          ))}
         </div>
       )}
 

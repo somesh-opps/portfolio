@@ -3,10 +3,12 @@ import { Card } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Award, ChevronLeft, ChevronRight } from "lucide-react";
 import { useState } from "react";
+import { useIsMobile } from "@/hooks/use-mobile";
 import experienceData from "@/data/experience.json";
 
 const ExperienceSection = () => {
   const experience = experienceData;
+  const isMobile = useIsMobile();
   const [selectedCertificates, setSelectedCertificates] = useState<{name: string, urls: string[]} | null>(null);
   const [currentCertificateIndex, setCurrentCertificateIndex] = useState(0);
   const [isDialogOpen, setIsDialogOpen] = useState(false);
@@ -61,39 +63,79 @@ const ExperienceSection = () => {
       title="Experience"
       subtitle="Practical Learning"
     >
-  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-xs md:text-base">
-        {experience.map((exp, index) => (
-          <Card
-            key={index}
-            className="p-3 md:p-6 glow-on-hover bg-muted/50 h-full text-xs md:text-base"
-          >
-            <div className="relative flex flex-col justify-between h-full gap-4">
-              {/* top-right icon */}
-              <div className="absolute -top-1 -right-1 w-8 h-8 rounded-md bg-primary/10 flex items-center justify-center" aria-hidden="true">
-                <Award size={14} className="text-primary" />
-              </div>
-              <div>
-                <h4 className="text-base md:text-xl font-bold mb-1">{exp.name}</h4>
-                {exp.description && (
-                  <p className="text-xs md:text-sm text-muted-foreground mt-2">{exp.description}</p>
-                )}
-              </div>
+      {/* Mobile: Horizontal scroll layout */}
+      {isMobile ? (
+        <div className="overflow-x-auto overflow-y-visible pt-4 pb-4 -mx-6 pr-6">
+          <div className="flex gap-4 w-max py-2">
+            {experience.map((exp, index) => (
+              <Card
+                key={index}
+                className="p-3 glow-on-hover bg-muted/50 text-xs flex-shrink-0 w-64 h-40"
+              >
+                <div className="relative flex flex-col justify-between h-full gap-4">
+                  {/* top-right icon */}
+                  <div className="absolute -top-1 -right-1 w-8 h-8 rounded-md bg-primary/10 flex items-center justify-center" aria-hidden="true">
+                    <Award size={14} className="text-primary" />
+                  </div>
+                  <div>
+                    <h4 className="text-base font-bold mb-1">{exp.name}</h4>
+                    {exp.description && (
+                      <p className="text-xs text-muted-foreground mt-2">{exp.description}</p>
+                    )}
+                  </div>
 
-              <div className="flex items-center justify-between gap-4">
-                <span className="text-xs md:text-sm text-muted-foreground">{exp.type}</span>
-                {exp.certificate && (
-                  <button
-                    onClick={() => handleCertificateClick(exp.name, exp)}
-                    className="text-[10px] md:text-xs bg-primary/10 text-primary px-2 md:px-3 py-0.5 md:py-1 rounded-full font-medium hover:bg-primary/20 transition-colors cursor-pointer"
-                  >
-                    View Certificate
-                  </button>
-                )}
+                  <div className="flex items-center justify-between gap-4">
+                    <span className="text-xs text-muted-foreground">{exp.type}</span>
+                    {exp.certificate && (
+                      <button
+                        onClick={() => handleCertificateClick(exp.name, exp)}
+                        className="text-[10px] bg-primary/10 text-primary px-2 py-0.5 rounded-full font-medium hover:bg-primary/20 transition-colors cursor-pointer"
+                      >
+                        View Certificate
+                      </button>
+                    )}
+                  </div>
+                </div>
+              </Card>
+            ))}
+          </div>
+        </div>
+      ) : (
+        /* Tablet/Desktop: Grid layout */
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-xs md:text-base">
+          {experience.map((exp, index) => (
+            <Card
+              key={index}
+              className="p-3 md:p-6 glow-on-hover bg-muted/50 h-full text-xs md:text-base"
+            >
+              <div className="relative flex flex-col justify-between h-full gap-4">
+                {/* top-right icon */}
+                <div className="absolute -top-1 -right-1 w-8 h-8 rounded-md bg-primary/10 flex items-center justify-center" aria-hidden="true">
+                  <Award size={14} className="text-primary" />
+                </div>
+                <div>
+                  <h4 className="text-base md:text-xl font-bold mb-1">{exp.name}</h4>
+                  {exp.description && (
+                    <p className="text-xs md:text-sm text-muted-foreground mt-2">{exp.description}</p>
+                  )}
+                </div>
+
+                <div className="flex items-center justify-between gap-4">
+                  <span className="text-xs md:text-sm text-muted-foreground">{exp.type}</span>
+                  {exp.certificate && (
+                    <button
+                      onClick={() => handleCertificateClick(exp.name, exp)}
+                      className="text-[10px] md:text-xs bg-primary/10 text-primary px-2 md:px-3 py-0.5 md:py-1 rounded-full font-medium hover:bg-primary/20 transition-colors cursor-pointer"
+                    >
+                      View Certificate
+                    </button>
+                  )}
+                </div>
               </div>
-            </div>
-          </Card>
-        ))}
-      </div>
+            </Card>
+          ))}
+        </div>
+      )}
       
       {/* Certificate Dialog */}
       <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
