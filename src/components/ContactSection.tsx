@@ -10,8 +10,8 @@ const ContactSection = () => {
         {/* Mobile / Tablet: centered card layout (visible below lg) */}
         <div className="lg:hidden flex justify-center">
           <div className="w-full max-w-md p-6 rounded-2xl border border-muted/40 bg-muted/30">
-            <h3 className="text-3xl font-bold text-center mb-2 bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">I'd love to hear<br />
-                  from you.</h3>
+            <h2 className="text-3xl font-bold text-center mb-2 bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">I'd love to hear<br />
+                  from you.</h2>
             {/* <p className="text-center text-sm mb-6">Feel free to reach out for collaborations or just a friendly chat!</p> */}
 
             <div className="space-y-4">

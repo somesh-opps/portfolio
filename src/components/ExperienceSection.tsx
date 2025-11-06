@@ -78,7 +78,7 @@ const ExperienceSection = () => {
                     <Award size={14} className="text-primary" />
                   </div>
                   <div>
-                    <h4 className="text-base font-bold mb-1">{exp.name}</h4>
+                    <h3 className="text-base font-bold mb-1">{exp.name}</h3>
                     {exp.description && (
                       <p className="text-xs text-muted-foreground mt-2">{exp.description}</p>
                     )}
@@ -115,7 +115,7 @@ const ExperienceSection = () => {
                   <Award size={14} className="text-primary" />
                 </div>
                 <div>
-                  <h4 className="text-base md:text-xl font-bold mb-1">{exp.name}</h4>
+                  <h3 className="text-base md:text-xl font-bold mb-1">{exp.name}</h3>
                   {exp.description && (
                     <p className="text-xs md:text-sm text-muted-foreground mt-2">{exp.description}</p>
                   )}
@@ -192,7 +192,7 @@ const ExperienceSection = () => {
             {/* Fallback placeholder */}
             <div className="text-center space-y-4 hidden">
               <Award size={64} className="text-primary mx-auto" />
-              <h3 className="text-xl font-semibold">Certificate of Participation</h3>
+              <h4 className="text-xl font-semibold">Certificate of Participation</h4>
               <p className="text-muted-foreground">For {selectedCertificates?.name}</p>
               <p className="text-sm text-muted-foreground mt-4">
                 Certificate image could not be loaded.

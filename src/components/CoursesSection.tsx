@@ -79,7 +79,7 @@ const CoursesSection = () => {
                     <BookOpen className="text-primary" size={16} />
                   </div>
                   <div className="flex-1">
-                    <h4 className="text-sm font-bold mb-2">{course.title}</h4>
+                    <h3 className="text-sm font-bold mb-2">{course.title}</h3>
                     <p className="text-xs text-muted-foreground mb-3 leading-relaxed line-clamp-3">{course.description}</p>
                     {course.certificate && course.certificateUrl ? (
                       <button
@@ -118,7 +118,7 @@ const CoursesSection = () => {
                   </span>
                 </div>
                 <div className="flex-1">
-                  <h4 className="text-sm md:text-base font-bold mb-2">{course.title}</h4>
+                  <h3 className="text-sm md:text-base font-bold mb-2">{course.title}</h3>
                   <p className="text-xs text-muted-foreground mb-3 leading-relaxed">{course.description}</p>
                   {course.certificate && course.certificateUrl ? (
                     <button
@@ -193,7 +193,7 @@ const CoursesSection = () => {
             {/* Fallback placeholder */}
             <div className="text-center space-y-4 hidden">
               <Award size={64} className="text-primary mx-auto" />
-              <h3 className="text-xl font-semibold">Certificate of Completion</h3>
+              <h4 className="text-xl font-semibold">Certificate of Completion</h4>
               <p className="text-muted-foreground">For {selectedCertificates?.name}</p>
               <p className="text-sm text-muted-foreground mt-4">
                 Certificate image could not be loaded.

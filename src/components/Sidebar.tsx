@@ -62,9 +62,9 @@ const Sidebar = () => {
               className="w-full h-full object-cover"
             />
           </div>
-          <h2 className="text-2xl font-bold text-primary-foreground text-center mb-2">
+          <p className="text-2xl font-bold text-primary-foreground text-center mb-2">
             Somesh Kumar Sahoo
-          </h2>
+          </p>
         </div>
 
         <div className="flex flex-col gap-2 mb-8 w-full animate-slideInLeft">

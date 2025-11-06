@@ -78,7 +78,7 @@ const EventsSection = () => {
                     <CalendarDays className="text-primary" size={16} />
                   </div>
                   <div className="flex-1">
-                    <h4 className="text-sm font-bold mb-2">'{event.name}'</h4>
+                    <h3 className="text-sm font-bold mb-2">'{event.name}'</h3>
                     <p className="text-xs text-muted-foreground mb-3 leading-relaxed line-clamp-3">{event.description}</p>
                     {event.certificate && event.certificateUrl && (
                       <button
@@ -108,7 +108,7 @@ const EventsSection = () => {
                   <CalendarDays className="text-primary" size={16} />
                 </div>
                 <div>
-                  <h4 className="text-base font-bold mb-2">'{event.name}'</h4>
+                  <h3 className="text-base font-bold mb-2">'{event.name}'</h3>
                   <p className="text-xs md:text-sm text-muted-foreground mb-3 leading-relaxed">{event.description}</p>
                   {event.certificate && event.certificateUrl && (
                     <button
@@ -179,7 +179,7 @@ const EventsSection = () => {
             {/* Fallback placeholder */}
             <div className="text-center space-y-4 hidden">
               <Award size={64} className="text-primary mx-auto" />
-              <h3 className="text-xl font-semibold">Certificate of Participation</h3>
+              <h4 className="text-xl font-semibold">Certificate of Participation</h4>
               <p className="text-muted-foreground">For {selectedCertificates?.name}</p>
               <p className="text-sm text-muted-foreground mt-4">
                 Certificate image could not be loaded.
