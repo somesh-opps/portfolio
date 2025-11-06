@@ -63,32 +63,6 @@
 
 ---
 
-<h2 align="center" style="background: linear-gradient(90deg,#ff512f,#dd2476,#1fa2ff,#12d8fa,#a6ffcb); -webkit-background-clip: text; color: transparent;">📂 Project Structure</h2>
-
-<div align="center">
-
-```
-portfolio/
-├── public/                # Static assets (images, certificates, icons)
-├── src/
-│   ├── assets/            # (Legacy) images, now in public
-│   ├── components/        # All React components (sections, UI, hooks)
-│   │   └── ui/            # UI subcomponents (buttons, cards, etc.)
-│   ├── data/              # JSON data for projects, courses, etc.
-│   ├── hooks/             # Custom React hooks
-│   ├── lib/               # Utility functions
-│   └── pages/             # Main pages (Index, NotFound, etc.)
-├── package.json
-├── tailwind.config.ts
-├── vite.config.ts
-├── tsconfig.json
-└── README.md
-```
-
-</div>
-
----
-
 <h2 align="center" style="background: linear-gradient(90deg,#ff512f,#dd2476,#1fa2ff,#12d8fa,#a6ffcb); -webkit-background-clip: text; color: transparent;">🌐 Live Demo</h2>
 
 <p align="center">
