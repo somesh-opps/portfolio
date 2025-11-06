@@ -90,6 +90,7 @@ const ExperienceSection = () => {
                       <button
                         onClick={() => handleCertificateClick(exp.name, exp)}
                         className="text-[10px] bg-primary/10 text-primary px-2 py-0.5 rounded-full font-medium hover:bg-primary/20 transition-colors cursor-pointer"
+                        aria-label={`View certificate for ${exp.name}`}
                       >
                         View Certificate
                       </button>
@@ -126,6 +127,7 @@ const ExperienceSection = () => {
                     <button
                       onClick={() => handleCertificateClick(exp.name, exp)}
                       className="text-[10px] md:text-xs bg-primary/10 text-primary px-2 md:px-3 py-0.5 md:py-1 rounded-full font-medium hover:bg-primary/20 transition-colors cursor-pointer"
+                      aria-label={`View certificate for ${exp.name}`}
                     >
                       View Certificate
                     </button>

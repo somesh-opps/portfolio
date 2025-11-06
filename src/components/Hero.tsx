@@ -24,7 +24,7 @@ const Hero = () => {
           />
         </div>
         
-        <p className="text-primary-foreground/80 text-base md:text-xl mb-4 font-light tracking-wide animate-fadeIn opacity-0" style={{ animationDelay: '0.5s', animationFillMode: 'forwards' }}>
+        <p className="text-gray-200 text-base md:text-xl mb-4 font-light tracking-wide animate-fadeIn opacity-0" style={{ animationDelay: '0.5s', animationFillMode: 'forwards' }}>
           HELLO, I'M
         </p>
         
@@ -32,7 +32,7 @@ const Hero = () => {
           Somesh Kumar Sahoo
         </h1>
         
-        <p className="text-base md:text-2xl text-primary-foreground/90 max-w-3xl mx-auto leading-relaxed animate-fadeIn opacity-0" style={{ animationDelay: '1.5s', animationFillMode: 'forwards' }}>
+        <p className="text-base md:text-2xl text-gray-100 max-w-3xl mx-auto leading-relaxed animate-fadeIn opacity-0" style={{ animationDelay: '1.5s', animationFillMode: 'forwards' }}>
           A second year B. Tech student specialising in Computer Science and Technology (CST).
         </p>
       </div>

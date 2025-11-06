@@ -43,8 +43,8 @@ export default {
           foreground: "hsl(var(--accent-foreground))",
         },
         teal: {
-          DEFAULT: "#14b8a6", // Tailwind teal-500
-          light: "#2dd4bf",   // Tailwind teal-400
+          DEFAULT: "#0d9488", // Tailwind teal-600 - better contrast
+          light: "#14b8a6",   // Tailwind teal-500 - darker for better contrast
           dark: "#0f766e",   // Tailwind teal-700
           foreground: "#ffffff"
         },

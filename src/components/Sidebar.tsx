@@ -29,7 +29,7 @@ const Sidebar = () => {
       {/* Floating Mobile Menu Button */}
       <button
         onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-        className="lg:hidden fixed top-6 right-6 z-50 p-2 bg-black/30 backdrop-blur-sm rounded-lg shadow-lg border border-white/20 text-white hover:bg-black/40 transition-all"
+        className="lg:hidden fixed top-6 right-6 z-50 p-2 bg-black/40 backdrop-blur-sm rounded-lg shadow-lg border border-white/20 text-white hover:bg-black/60 transition-all"
         aria-label="Toggle menu"
       >
         {mobileMenuOpen ? <X size={18} /> : <Menu size={18} />}
@@ -70,14 +70,14 @@ const Sidebar = () => {
         <div className="flex flex-col gap-2 mb-8 w-full animate-slideInLeft">
           <a
             href="mailto:someshkumarsahoo28@gmail.com"
-            className="flex items-center gap-3 text-primary-foreground/90 hover:text-primary-foreground transition-all hover:translate-x-1"
+            className="flex items-center gap-3 text-gray-200 hover:text-primary-foreground transition-all hover:translate-x-1"
           >
             <Mail size={18} />
             <span className="text-sm">someshkumarsahoo28@gmail.com</span>
           </a>
           <a
             href="tel:+919614175335"
-            className="flex items-center gap-3 text-primary-foreground/90 hover:text-primary-foreground transition-all hover:translate-x-1"
+            className="flex items-center gap-3 text-gray-200 hover:text-primary-foreground transition-all hover:translate-x-1"
           >
             <Phone size={18} />
             <span className="text-sm">+91 96141 75335</span>
@@ -89,7 +89,7 @@ const Sidebar = () => {
             href="https://www.linkedin.com/in/someshkumarsahoo/"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-lg flex items-center justify-center transition-all hover:scale-110"
+            className="w-10 h-10 bg-white/15 hover:bg-white/25 rounded-lg flex items-center justify-center transition-all hover:scale-110"
             aria-label="LinkedIn"
           >
             <Linkedin size={20} className="text-primary-foreground" />
@@ -98,7 +98,7 @@ const Sidebar = () => {
             href="https://github.com/somesh-opps"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-lg flex items-center justify-center transition-all hover:scale-110"
+            className="w-10 h-10 bg-white/15 hover:bg-white/25 rounded-lg flex items-center justify-center transition-all hover:scale-110"
             aria-label="GitHub"
           >
             <Github size={20} className="text-primary-foreground" />
@@ -107,7 +107,7 @@ const Sidebar = () => {
             href="https://x.com/someshsahoo_"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-lg flex items-center justify-center transition-all hover:scale-110"
+            className="w-10 h-10 bg-white/15 hover:bg-white/25 rounded-lg flex items-center justify-center transition-all hover:scale-110"
             aria-label="Twitter"
           >
             <Twitter size={20} className="text-primary-foreground" />
@@ -116,7 +116,7 @@ const Sidebar = () => {
             href="https://discord.com/users/someshsahoo_"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-lg flex items-center justify-center transition-all hover:scale-110"
+            className="w-10 h-10 bg-white/15 hover:bg-white/25 rounded-lg flex items-center justify-center transition-all hover:scale-110"
             aria-label="Discord"
           >
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-primary-foreground">
@@ -130,7 +130,7 @@ const Sidebar = () => {
             <button
               key={link.id}
               onClick={() => scrollToSection(link.id)}
-              className="text-left py-3 px-6 text-sm text-primary-foreground/80 hover:text-primary-foreground hover:bg-white/10 rounded-lg transition-all"
+              className="text-left py-3 px-6 text-sm text-gray-200 hover:text-primary-foreground hover:bg-white/15 rounded-lg transition-all"
             >
               {link.label}
             </button>
