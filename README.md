@@ -89,25 +89,6 @@ portfolio/
 
 ---
 
-<h2 align="center" style="background: linear-gradient(90deg,#ff512f,#dd2476,#1fa2ff,#12d8fa,#a6ffcb); -webkit-background-clip: text; color: transparent;">🚦 Quick Start</h2>
-
-<div align="center">
-
-```sh
-# 1. Install dependencies
-npm install
-
-# 2. Start the dev server
-npm run dev
-
-# 3. Build for production
-npm run build
-```
-
-</div>
-
----
-
 <h2 align="center" style="background: linear-gradient(90deg,#ff512f,#dd2476,#1fa2ff,#12d8fa,#a6ffcb); -webkit-background-clip: text; color: transparent;">🌐 Live Demo</h2>
 
 <p align="center">

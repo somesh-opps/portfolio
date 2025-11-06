@@ -39,28 +39,31 @@ const ContactSection = () => {
             <div className="text-center mt-6 text-sm">Connect with me on</div>
             <div className="flex justify-center gap-4 mt-4">
               <a 
-                href="https://linkedin.com" 
+                href="https://www.linkedin.com/in/someshkumarsahoo/" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="w-10 h-10 rounded-full bg-primary/20 hover:bg-primary/30 flex items-center justify-center glow-on-hover group relative"
+                aria-label="LinkedIn"
               >
                 <Linkedin size={18} className="text-primary" />
                 <span className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 text-foreground text-xs font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-200">LinkedIn</span>
               </a>
               <a 
-                href="https://twitter.com" 
+                href="https://x.com/someshsahoo_" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="w-10 h-10 rounded-full bg-primary/20 hover:bg-primary/30 flex items-center justify-center glow-on-hover group relative"
+                aria-label="Twitter"
               >
                 <Twitter size={18} className="text-primary" />
                 <span className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 text-foreground text-xs font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-200">Twitter</span>
               </a>
               <a 
-                href="https://github.com" 
+                href="https://github.com/somesh-opps" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="w-10 h-10 rounded-full bg-primary/20 hover:bg-primary/30 flex items-center justify-center glow-on-hover group relative"
+                aria-label="GitHub"
               >
                 <Github size={18} className="text-primary" />
                 <span className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 text-foreground text-xs font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-200">GitHub</span>

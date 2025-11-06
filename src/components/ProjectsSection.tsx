@@ -64,14 +64,26 @@ const ProjectsSection = () => {
                 </h3>
                 <div className="flex gap-2 shrink-0">
                   {project.githubLink && (
-                    <button className="w-8 h-8 bg-muted hover:bg-primary rounded-lg flex items-center justify-center text-muted-foreground hover:text-primary-foreground transition-all">
+                    <a
+                      href={project.githubLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-8 h-8 bg-muted hover:bg-primary rounded-lg flex items-center justify-center text-muted-foreground hover:text-primary-foreground transition-all"
+                      aria-label={`View ${project.title} source code on GitHub`}
+                    >
                       <Code size={16} />
-                    </button>
+                    </a>
                   )}
                   {project.liveLink && (
-                    <button className="w-8 h-8 bg-primary hover:bg-muted rounded-lg flex items-center justify-center text-primary-foreground hover:text-muted-foreground transition-all">
+                    <a
+                      href={project.liveLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-8 h-8 bg-primary hover:bg-muted rounded-lg flex items-center justify-center text-primary-foreground hover:text-muted-foreground transition-all"
+                      aria-label={`View ${project.title} live demo`}
+                    >
                       <ExternalLink size={16} />
-                    </button>
+                    </a>
                   )}
                 </div>
               </div>
