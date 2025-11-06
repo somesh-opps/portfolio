@@ -169,6 +169,7 @@ const ExperienceSection = () => {
               <img
                 src={selectedCertificates.urls[currentCertificateIndex]}
                 alt={`Certificate ${currentCertificateIndex + 1} for ${selectedCertificates.name}`}
+                loading="lazy"
                 className="max-w-full max-h-[70vh] object-contain rounded-lg shadow-lg"
                 onError={(e) => {
                   // Fallback to placeholder if image fails to load
