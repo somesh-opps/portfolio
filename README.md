@@ -66,7 +66,7 @@
 <h2 align="center" style="background: linear-gradient(90deg,#ff512f,#dd2476,#1fa2ff,#12d8fa,#a6ffcb); -webkit-background-clip: text; color: transparent;">🌐 Live Demo</h2>
 
 <p align="center">
-  <a href="https://your-portfolio-demo-link.com" target="_blank">
+  <a href="https://somesh-opps.github.io/portfolio/" target="_blank">
     <img src="https://img.shields.io/badge/Live%20Demo-FF512F?style=for-the-badge&logo=vercel&logoColor=white"/>
   </a>
 </p>
